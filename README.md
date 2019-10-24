@@ -6,11 +6,11 @@ Opdracht voor een klant met als doel datavisualisatie bij aangemeerde schepen.
 ### Milestone 1 (07/11):
 - database model (Hannes)
 - wireframes (Hanne)
-- 1 boot getekend (Hanne)
+- 1 schip getekend (Hanne)
 - test voor data up te loaden uit excel (Hannes)
 
 ### Milestone 2 (06/12):
-- 5 boten (Hanne)
+- 5 schepen getekend (Hanne)
 - style tiles (Hanne)
 - opzetten database (Hannes)
 - desktop website visualiseren volgens wireframes (Hannes)
