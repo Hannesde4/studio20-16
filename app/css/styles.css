@@ -1,0 +1,153 @@
+/*
+RESOURCES:
+*/
+
+@font-face {
+    font-family: 'a_pompadour_sampleregular';
+    src: url('../resources/fonts/02_apompadourtextsample-webfont.woff2') format('woff2'),
+         url('../resources/fonts/02_apompadourtextsample-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'a_pompadour_bold_sampleRg';
+    src: url('../resources/fonts/03_apompadourboldsample-webfont.woff2') format('woff2'),
+         url('../resources/fonts/03_apompadourboldsample-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+button{
+    border:none;
+    height: 46px;
+    font-size: 1rem;
+    padding: 0 10px;
+    font-family: a_pompadour_sampleregular;
+    border-radius: 2.5px;
+}
+
+.button-black{
+    background-color:black;
+    color:white;
+}
+
+body{
+    font-family: a_pompadour_sampleregular;
+    font-size:12pt;
+}
+
+
+/*
+NAVIGATION
+*/
+div.main-navigation{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1636px;
+    padding: 0 50px;
+    width: 100%;
+    margin: 0 auto;
+    height:200px;
+    align-items: center;
+}
+
+.main-navigation-left, .main-navigation-right{
+    width: 40%;
+}
+
+.search-bar{
+    border: solid 1px black;
+    border-radius: 2.5px;
+    height: 46px;
+    font-size: 1.25rem;
+    line-height: 46px;
+    padding: 0 10px;
+}
+
+.search-bar i{
+    line-height: 46px;
+    font-size:1rem;
+}
+
+.search-bar input{
+    color:black;
+}
+
+.navigation-search{
+    border: none;
+}
+
+.main-navigation-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-navigation-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-navigation-right > button{
+    margin-right: 10px;
+}
+
+.main-navigation-left button + i, .main-navigation-left i + i{
+    font-size: 48px;
+}
+
+.search-bar, .search-bar + button, button + i{
+    margin-right: 10px;
+}
+
+.logo-main{
+    max-height: 200px;
+    width: auto;
+}
+
+
+/*
+HOMEPAGE
+*/
+.body-homepage{
+    background-image: url("../resources/background/achtergrond1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    max-width: 1636px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding-top:100px;
+}
+
+.ship{
+    margin-bottom: 50px;
+    max-width:23.5%;
+    width:100%;
+}
+
+.ship .ship-info h2{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.ship .ship-info h6{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #FF4F4F;
+    margin:0;
+}
+
+.img-ship{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+}
