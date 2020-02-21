@@ -16,9 +16,12 @@
                     <input class="navigation-search" type="search" placeholder="SEARCH" results="0" />
                     <i class="fas fa-search"></i>
                 </div>
-                <button class="button-black"><i class="fas fa-heart"></i> FAVORITES</button>
-                <i class="fas fa-th-large"></i>
-                <i class="fas fa-list"></i>
+                <button class="button-black">
+                    <i class="fas fa-heart"></i>
+                    FAVORITES
+                </button>
+                <i id="block-view" class="fas fa-th-large"></i>
+                <i id="list-view" class="fas fa-list"></i>
             </div>
     
             <img src="resources/logo/Martieme_techniek_2019_80x70_VLUGMOOR.png" alt="logo Ghent University - VLUGMOOR" class="logo-main">
@@ -35,8 +38,10 @@
         </div>
     </nav>
 
-    <div id="container-homepage" class="container container-homepage">
+    <div id="container-homepage" class="container container-homepage list">
 
+
+        <!-- Buildup to show 1 ship-->
         <div class="ship">
             <img src="resources/ships/placeholder.svg" alt="ship placeholder" class="img-ship">
             <div class="ship-info">
@@ -46,6 +51,11 @@
                 <h6>
                     2020-01-20
                 </h6>
+            </div>
+            <div class="ship-extra-info">
+                <h5>Wind direction SW</h5>
+                <h5>Force 3 Bf</h5>
+                <i class="ship-like far fa-heart"></i> 
             </div>
         </div>
         
@@ -58,13 +68,15 @@
 
 <script src="js/scripts.js"></script>
 
+
+<!-- Short script to view some ships -->
 <script>
 
     let container = document.getElementById('container-homepage');
-    for(i = 0 ; i < 7 ; i++){
+    for(i = 0 ; i < 8 ; i++){
 
         container.innerHTML +=
-        '<div class="ship"> <img src="resources/ships/placeholder.svg" alt="ship placeholder" class="img-ship"> <div class="ship-info"><h2> Containership - groot </h2> <h6> 2020-01-20 </h6> </div> </div>'
+        '<div class="ship"> <img src="resources/ships/placeholder.svg" alt="ship placeholder" class="img-ship"> <div class="ship-info"><h2> Containership - groot </h2> <h6> 2020-01-20 </h6> </div><div class="ship-extra-info"><h5>Wind direction SW</h5> <h5>Force 3 Bf</h5> <i class="ship-like fas fa-heart"></i> </div> </div>'
     }
 
 </script>

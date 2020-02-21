@@ -27,6 +27,10 @@ button{
     border-radius: 2.5px;
 }
 
+button .fa-heart{
+    color: #FF4F4F;
+}
+
 .button-black{
     background-color:black;
     color:white;
@@ -106,6 +110,10 @@ div.main-navigation{
     width: auto;
 }
 
+.fa-file-download{
+    font-size: 32px;
+}
+
 
 /*
 HOMEPAGE
@@ -129,7 +137,13 @@ HOMEPAGE
     padding-top:100px;
 }
 
-.ship{
+.ship-like{
+    color: #FF4F4F;
+    font-size:32px;
+}
+
+.container-homepage.block .ship{
+    position: relative;
     margin-bottom: 50px;
     max-width:23.5%;
     width:100%;
@@ -138,16 +152,94 @@ HOMEPAGE
 .ship .ship-info h2{
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 0;
 }
 
 .ship .ship-info h6{
+    color: #FF4F4F;
+}
+
+.container-homepage.block .ship .ship-info h2{
+    margin-bottom: 0;
+}
+
+.container-homepage.block .ship .ship-extra-info{
+    display: none;
+}
+
+.container-homepage.block .ship .ship-info h6{
     font-size: 1rem;
     line-height: 1.5rem;
-    color: #FF4F4F;
     margin:0;
 }
 
-.img-ship{
+.container-homepage.block .img-ship{
     box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+}
+
+.container-homepage.block .ship-like{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+}
+
+.container-homepage.list{
+    max-width: 1063px;
+}
+
+.container-homepage.list .ship{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+    background-color: #FCFCFC;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+    margin-bottom: 34px;
+}
+
+.container-homepage.list .img-ship{
+    display: none;
+}
+
+.container-homepage.list .ship-info{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-homepage.list .ship .ship-extra-info{
+    display: flex;
+    align-items: center;
+    color: #888888;
+}
+
+.container-homepage.list .ship .ship-info{
+    align-items: center;
+}
+
+.container-homepage.list .ship-extra-info h5{
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+.container-homepage.list .ship .ship-info h6{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin:0;
+}
+
+.container-homepage.list .ship .ship-info h2{
+    font-size: 1.25rem;
+}
+
+.container-homepage.list .ship .ship-info h2, .container-homepage.list .ship .ship-info h6, .container-homepage.list .ship .ship-extra-info h5, .container-homepage.list .ship .ship-extra-info i{
+    padding: 10px 20px;
+}
+
+.container-homepage.list .ship .ship-info h6{
+    border-right: solid 2px #888888;
+}
+
+.container-homepage.list .ship .ship-extra-info h5, .container-homepage.list .ship .ship-extra-info i{
+    border-left: solid 2px #888888;
 }
