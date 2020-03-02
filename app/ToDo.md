@@ -23,7 +23,7 @@
 
 ## Dynamic part of the website:
 
-#### !!! ##### make a new branch before starting! #### !!!
+#### !!!   make a new branch before starting   !!!
 
 ### Homepage:
 - add upload flow
