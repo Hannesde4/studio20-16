@@ -194,6 +194,11 @@ HOMEPAGE
     max-width: 1063px;
 }
 
+.container-homepage.list a{
+    text-decoration: none;
+    color: black;
+}
+
 .container-homepage.list a .ship{
     display: flex;
     flex-wrap: wrap;
