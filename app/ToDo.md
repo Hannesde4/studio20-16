@@ -3,7 +3,11 @@
 ## Static part of the website:
 
 ### Homepage:
+<<<<<<< HEAD
 ~~ search bar when active: no blue glow ~~
+=======
+- ~~search bar when active: no blue glow~~
+>>>>>>> c61fa03144f71cc1e7ba1d2378d4bd7212d0b04f
 - search bar: make the magnifying gogles clickable to search
 - search bar: when pressing enter let them search
 - add pagination
