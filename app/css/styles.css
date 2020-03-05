@@ -83,6 +83,11 @@ div.main-navigation{
     border: none;
 }
 
+.navigation-search:focus {
+    outline-color: transparent;
+    outline-style: none;
+  }
+
 .main-navigation-left{
     display: flex;
     justify-content: flex-start;
@@ -119,7 +124,7 @@ div.main-navigation{
 HOMEPAGE
 */
 .body-homepage{
-    background-image: url("../resources/background/achtergrond1.svg");
+    background-image: url("../resources/backgrounds/achtergrond1.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
