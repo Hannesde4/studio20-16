@@ -290,8 +290,6 @@ background-color: #fff;
 }
 
 
-/* Overlay */
-
 .Modal {
     display: block;
     position: fixed;
@@ -322,22 +320,14 @@ background-color: #fff;
     margin-top: -225px;
 }
 
-.ModalOpen { overflow: hidden; }
-
-.is-hidden { display: none; }
-
-.is-visuallyHidden { opacity: 0; }
-
-/* The Close Button */
-
-.Close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 16px;
+.ModalOpen{
+    overflow: hidden;
 }
 
-.Close:hover, .Close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+.is-hidden{ 
+    display: none;
+}
+
+.is-visuallyHidden{ 
+    opacity: 0;
 }
