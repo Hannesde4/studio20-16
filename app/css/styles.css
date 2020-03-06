@@ -123,7 +123,7 @@ div.main-navigation{
 /*
 HOMEPAGE
 */
-.body-homepage{
+body.body-homepage{
     background-image: url("../resources/backgrounds/achtergrond1.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,4 +254,90 @@ HOMEPAGE
 
 .container-homepage.list a .ship .ship-extra-info h5, .container-homepage.list a .ship .ship-extra-info i{
     border-left: solid 2px #888888;
+}
+
+.upload-file-flow{
+    position: fixed;
+    height: 200px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px; /* Negative half of height. */
+    margin-left: -250px; /* Negative half of width. */
+    background-color:white;
+}
+
+.BlurContainer {
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+  
+.is-blurred {
+filter: blur(5px);
+-webkit-filter: blur(5px);
+}
+
+.MainHeader {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 60px;
+margin-bottom: 30px;
+padding: 10px 0;
+background-color: #fff;
+}
+
+
+/* Overlay */
+
+.Modal {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.5s;
+    overflow: auto;
+    transition: all 0.3s linear;
+}
+
+.Modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    height: 450px;
+    margin-top: -225px;
+}
+
+.ModalOpen { overflow: hidden; }
+
+.is-hidden { display: none; }
+
+.is-visuallyHidden { opacity: 0; }
+
+/* The Close Button */
+
+.Close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 16px;
+}
+
+.Close:hover, .Close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }

@@ -9,65 +9,80 @@
     <title>VLUGMOOR</title>
 </head>
 <body class="body-homepage">
-    <nav>
-        <div class="main-navigation">
-            <div class="main-navigation-left">
-                <div class="search-bar">
-                    <input class="navigation-search" type="search" placeholder="SEARCH" results="0" />
-                    <i class="fas fa-search"></i>
+    <main id="blurContainer" class="BlurContainer">
+        <nav>
+            <div class="main-navigation">
+                <div class="main-navigation-left">
+                    <div class="search-bar">
+                        <input class="navigation-search" type="search" placeholder="SEARCH" results="0" />
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <button class="button-black">
+                        <i class="fas fa-heart"></i>
+                        FAVORITES
+                    </button>
+                    <i id="block-view" class="fas fa-th-large"></i>
+                    <i id="list-view" class="fas fa-list"></i>
                 </div>
-                <button class="button-black">
-                    <i class="fas fa-heart"></i>
-                    FAVORITES
-                </button>
-                <i id="block-view" class="fas fa-th-large"></i>
-                <i id="list-view" class="fas fa-list"></i>
+        
+                <img src="resources/logo/Martieme_techniek_2019_80x70_VLUGMOOR.png" alt="logo Ghent University - VLUGMOOR" class="logo-main">
+        
+                <div class="main-navigation-right">
+                    <button class="button-black">
+                        <i class="fas fa-file-download"></i>
+                    </button>
+                    <button id="upload-file" class="button-black">
+                        <i class="fas fa-plus"></i>
+                        UPLOAD NEW DATA FILE
+                    </button>
+                </div>
             </div>
-    
-            <img src="resources/logo/Martieme_techniek_2019_80x70_VLUGMOOR.png" alt="logo Ghent University - VLUGMOOR" class="logo-main">
-    
-            <div class="main-navigation-right">
-                <button class="button-black">
-                    <i class="fas fa-file-download"></i>
-                </button>
-                <button class="button-black">
-                    <i class="fas fa-plus"></i>
-                    UPLOAD NEW DATA FILE
-                </button>
+        </nav>
+
+        <div id="container-homepage" class="container container-homepage block">
+
+
+            <!-- Buildup to show 1 ship-->
+            <a href="pages/ship.html">
+                <div class="ship">
+                    <img src="resources/ships/placeholder.svg" alt="ship placeholder" class="img-ship">
+                    <div class="ship-info">
+                        <h2>
+                            Containership - groot
+                        </h2>
+                        <h6>
+                            2020-01-20
+                        </h6>
+                    </div>
+                    <div class="ship-extra-info">
+                        <h5>Wind direction SW</h5>
+                        <h5>Force 3 Bf</h5>
+                        <i class="ship-like far fa-heart"></i> 
+                    </div>
+                </div>
+            </a>
+            
+            <div class="nav-page">
+
             </div>
         </div>
-    </nav>
+    </main>
 
-    <div id="container-homepage" class="container container-homepage block">
-
-
-        <!-- Buildup to show 1 ship-->
-        <a href="../pages/ship">
-            <div class="ship">
-                <img src="resources/ships/placeholder.svg" alt="ship placeholder" class="img-ship">
-                <div class="ship-info">
-                    <h2>
-                        Containership - groot
-                    </h2>
-                    <h6>
-                        2020-01-20
-                    </h6>
-                </div>
-                <div class="ship-extra-info">
-                    <h5>Wind direction SW</h5>
-                    <h5>Force 3 Bf</h5>
-                    <i class="ship-like far fa-heart"></i> 
-                </div>
-            </div>
-        </a>
-        
-        <div class="nav-page">
-
+    <!-- Modal container which includes the overlay -->
+    <div id="myModal" class="Modal is-hidden is-visuallyHidden">
+        <!-- Modal content -->
+        <div class="Modal-content">
+            <h2>UPLOAD NEW DATA FILE</h2>
+            <input type="title" placeholder="Title">
+            <input type="file" name="SELECT EXCEL-FILE">
+            <button id="cancel-upload"> Cancel </button>
+            <button> Upload </button>
         </div>
     </div>
 </body>
 </html>
 
+<script src="js/blur.js"></script>
 <script src="js/scripts.js"></script>
 
 
@@ -78,7 +93,7 @@
     for(i = 0 ; i < 8 ; i++){
 
         container.innerHTML +=
-        '<a href="../pages/ship.html"><div class="ship"> <img src="resources/ships/placeholder.svg" alt="ship placeholder" class="img-ship"> <div class="ship-info"><h2> Containership - groot </h2> <h6> 2020-01-20 </h6> </div><div class="ship-extra-info"><h5>Wind direction SW</h5> <h5>Force 3 Bf</h5> <i class="ship-like fas fa-heart"></i> </div> </div></a>'
+        '<a href="pages/ship.html"><div class="ship"> <img src="resources/ships/placeholder.svg" alt="ship placeholder" class="img-ship"> <div class="ship-info"><h2> Containership - groot </h2> <h6> 2020-01-20 </h6> </div><div class="ship-extra-info"><h5>Wind direction SW</h5> <h5>Force 3 Bf</h5> <i class="ship-like fas fa-heart"></i> </div> </div></a>'
     }
 
 </script>
