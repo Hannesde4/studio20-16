@@ -10,6 +10,7 @@
 - make an excel template for data, and add it to the download button in the navigation
 - when pressing upload new data file, show a pop up to upload a file
 - show hearts on liked and not liked uploads
+-  buttons don't show clickable mouse (need to show hand and not arrow when hovering)
 
 ### Single ship page:
 - show svg (fixed width/ height?)
