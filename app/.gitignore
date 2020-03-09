@@ -1,3 +1,2 @@
-
 # ignore the firebase authentification file 
-../js/firebase.js
+js/firebase.js
